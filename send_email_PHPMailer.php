@@ -9,16 +9,16 @@ use PHPMailer\PHPMailer\SMTP;
 $mail = new PHPMailer(true);
 
 try {
-    // $mail->isSMTP();
-    // $mail->Host = 'smtp.gmail.com'; // Ganti dengan alamat SMTP server Anda
-    // $mail->SMTPAuth = true;
-    // $mail->Username = 'your_email@gmail.com'; // Ganti dengan email Anda
-    // $mail->Password = 'your_password'; // Ganti dengan kata sandi email Anda
-    // $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-    // $mail->Port = 587; // Port SMTP Gmail
+    $mail->isSMTP();
+    $mail->Host = 'smtp.gmail.com'; // Ganti dengan alamat SMTP server Anda
+    $mail->SMTPAuth = true;
+    $mail->Username = 'shdsulthon11@gmail.com'; // Ganti dengan email Anda
+    $mail->Password = 'kkqe dgiu xdfd wgtu '; // Ganti dengan kata sandi email Anda
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+    $mail->Port = 587; // Port SMTP Gmail
 
     // Set PHPMailer untuk menggunakan mail() bawaan PHP
-    $mail->isMail();
+    // $mail->isMail();
 
     // Pengaturan email
     $mail->setFrom('shdsulthon11@gmail.com', 'Gatepass System'); // Ganti dengan alamat email dan nama Anda
